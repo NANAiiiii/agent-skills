@@ -7,7 +7,20 @@
 
 每个技能独立包含 `SKILL.md` 及其需要的脚本、参考资料和素材。
 
-## 技能目录
+## 按用途查找
+
+| 分类 | 什么时候用 | 技能 |
+| --- | --- | --- |
+| 搜索资料与寻找技能 | 查网上的资料，或找有没有能完成某件事的现成技能 | [agent-reach](skills/collected/agent-reach/SKILL.md)、[find-skills](skills/collected/find-skills/SKILL.md) |
+| 需求梳理与方案讨论 | 有了想法，想先把需求、遗漏和取舍想清楚 | [grilling](skills/collected/grilling/SKILL.md) |
+| AI 分工与协作 | 让 Codex 与 ChatGPT、WorkBuddy 或 DeepSeek Harness 分工完成任务 | [codex-with-chatgpt](skills/collected/codex-with-chatgpt/SKILL.md)、[workbuddy-executor（仅来源链接）](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/workbuddy-executor)、[deepseek-executor（仅来源链接）](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/deepseek-executor) |
+| 界面设计与报表制作 | 做网页界面，或根据截图制作 FineReport 驾驶舱 | [frontend-design](skills/collected/frontend-design/SKILL.md)、[finereport-from-image](skills/created/finereport-from-image/SKILL.md) |
+| 安全检查与项目收尾 | 检查代码安全问题，或整理项目文档、规则和交接内容 | [security-audit](skills/collected/security-audit/SKILL.md)、[neat-freak](skills/collected/neat-freak/SKILL.md) |
+| 求职与面试准备 | 根据简历和岗位要求，准备项目讲法及面试回答 | [interview-prep-generator](skills/collected/interview-prep-generator/SKILL.md) |
+
+共 11 个技能入口：9 个包含技能文件，2 个仅保留来源链接。下面按来源列出作者和详细用途；文件目录仍按来源保存。
+
+## 按来源查看
 
 ### 自己创建
 

@@ -2,7 +2,7 @@
 
 本仓库收录个人创建和收藏的 Agent Skills；使用与技能索引以 README.md 为准。
 
-- 自建技能放在 `skills/created/<技能名>/`，收藏及第三方改版放在 `skills/collected/<技能名>/`；新增技能时更新 README 的分类索引。
+- 自建技能放在 `skills/created/<技能名>/`，收藏及第三方改版放在 `skills/collected/<技能名>/`；新增技能时同步更新 README 的用途分类、数量和来源索引。
 - 技能包含 Markdown/YAML、Python 3、Node.js 和必要素材，没有统一应用服务或构建步骤。
 - 检查 FineReport 示例：`python skills/created/finereport-from-image/scripts/inspect_frm.py skills/created/finereport-from-image/assets/reference-dashboard.frm`。
 - JavaScript 语法检查：`node --check skills/created/finereport-from-image/scripts/preview_frm.cjs`。
