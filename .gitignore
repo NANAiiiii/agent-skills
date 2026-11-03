@@ -9,6 +9,9 @@ node_modules/
 .env
 .env.*
 !.env.example
+# Reviewed upstream synthetic fixtures, not real credentials.
+!skills/collected/neat-freak/evals/fixtures/eval-3-cold-start/workspace/analytics_dashboard/.env
+!skills/collected/neat-freak/evals/fixtures/eval-5-governance/workspace/pdf-tools/.env
 *.pem
 *.key
 storage-state*.json

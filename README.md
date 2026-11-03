@@ -17,13 +17,23 @@
 
 ### 收藏他人
 
-目前尚未收录。收录要求见[收藏说明](skills/collected/README.md)。
+| 技能 | 原作者 / 上游对照 | 用途 |
+| --- | --- | --- |
+| [grilling](skills/collected/grilling/SKILL.md) | [Matt Pocock](https://github.com/mattpocock/skills) | 通过逐轮追问澄清需求、检查方案和决策。 |
+| [find-skills](skills/collected/find-skills/SKILL.md) | [Vercel](https://github.com/vercel-labs/skills) | 搜索和推荐可安装的技能。 |
+| [agent-reach](skills/collected/agent-reach/SKILL.md) | [Panniantong](https://github.com/Panniantong/Agent-Reach) | 多平台信息检索与工具路由，保留本机参考资料。 |
+| [neat-freak](skills/collected/neat-freak/SKILL.md) | [数字生命卡兹克](https://github.com/KKKKhazix/khazix-skills) | 核对代码、文档、规则和发布状态，进行受控收尾。 |
+| [frontend-design](skills/collected/frontend-design/SKILL.md) | [Anthropic 上游对照](https://github.com/anthropics/skills) | 网页和应用界面的视觉设计；本机副本与当前上游不同。 |
+
+这 5 个技能于 2026-11-03 收录，保存本机当时正在使用的版本，不代表各上游最新版。每个目录的 `SOURCE.md` 记录固定上游对照提交、许可和差异，`SHA256SUMS.txt` 记录原始收录文件的字节校验值。收录规则见[收藏说明](skills/collected/README.md)。
 
 ## 使用
 
 将需要的单个技能目录（如 `skills/created/finereport-from-image/`）复制到本机 Codex 的技能目录（通常为 `~/.codex/skills/`），不要复制 `created` 或 `collected` 分类目录。在新会话中通过技能名调用，例如：
 
 > 使用 $finereport-from-image，按这张图片创建原生 FineReport 驾驶舱，保存到我指定的目录。
+
+收藏技能同理，例如复制 `skills/collected/grilling/` 这个完整目录，然后通过 `$grilling` 调用。保留目录内的脚本、参考资料和许可文件；目标已存在时先备份并比较，不直接覆盖。本仓库保存技能说明及支持资料，不会自动安装技能所需的 CLI、登录态或其他外部依赖。
 
 FineReport 技能附带检查脚本、预览脚本和原生参考模板。运行条件和使用方式见技能文档；预览需要可访问的 FineReport 服务及相应授权。
 
@@ -41,3 +51,9 @@ python skills/created/finereport-from-image/scripts/inspect_frm.py skills/create
 - 收藏第三方技能时记录原始来源，保留作者声明及许可证，遵守其使用和再分发条件。
 - 不上传账号密码、令牌、会话文件、业务数据、本机日志或预览输出。
 - 本仓库不自动同步本机已安装技能，更新时明确选择要提交的内容。
+
+## 更新方式
+
+**手动同步，不自动更新。** 原作者发布新版，不会自动更新本仓库；本仓库有新提交，也不会自动更新本机安装副本。
+
+更新时先选定具体技能，比较上游、本仓库和本机副本的差异，检查新增指令、脚本及许可，再由用户确认要同步哪一份。保留本机修改，更新来源记录和校验值；不配置定时任务、自动覆盖或自动更新工作流。
