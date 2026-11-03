@@ -16,9 +16,10 @@
 | AI 分工与协作 | 让 Codex 与 ChatGPT、WorkBuddy 或 DeepSeek Harness 分工完成任务 | [codex-with-chatgpt](skills/collected/codex-with-chatgpt/SKILL.md)、[workbuddy-executor（仅来源链接）](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/workbuddy-executor)、[deepseek-executor（仅来源链接）](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/deepseek-executor) |
 | 界面设计与报表制作 | 做网页界面，或根据截图制作 FineReport 驾驶舱 | [frontend-design](skills/collected/frontend-design/SKILL.md)、[finereport-from-image](skills/created/finereport-from-image/SKILL.md) |
 | 安全检查与项目收尾 | 检查代码安全问题，或整理项目文档、规则和交接内容 | [security-audit](skills/collected/security-audit/SKILL.md)、[neat-freak](skills/collected/neat-freak/SKILL.md) |
+| 磁盘分析与清理建议 | 看哪些目录占空间，生成存储分析报告及清理建议 | [storage-analyzer](skills/collected/storage-analyzer/SKILL.md) |
 | 求职与面试准备 | 根据简历和岗位要求，准备项目讲法及面试回答 | [interview-prep-generator](skills/collected/interview-prep-generator/SKILL.md) |
 
-共 11 个技能入口：9 个包含技能文件，2 个仅保留来源链接。下面按来源列出作者和详细用途；文件目录仍按来源保存。
+共 12 个技能入口：10 个包含技能文件，2 个仅保留来源链接。下面按来源列出作者和详细用途；文件目录仍按来源保存。
 
 ## 按来源查看
 
@@ -40,8 +41,9 @@
 | [interview-prep-generator](skills/collected/interview-prep-generator/SKILL.md) | [davila7 / claude-code-templates](https://github.com/davila7/claude-code-templates) | 面试前，把你的简历和岗位要求交给它，帮你整理项目经历怎么讲、可能被问什么，以及怎样回答。 |
 | [security-audit](skills/collected/security-audit/SKILL.md) | [Cloudflare](https://github.com/cloudflare/security-audit-skill) | 想检查代码是否有安全漏洞时，帮你排查风险、验证问题，并说明影响和修复建议。 |
 | [codex-with-chatgpt](skills/collected/codex-with-chatgpt/SKILL.md) | [XiaoDuoYa](https://github.com/XiaoDuoYa/codex-with-chatgpt) | 让 ChatGPT 帮忙想方案、检查结果，Codex 负责改文件、运行命令和测试；需要另行安装配套连接工具。 |
+| [storage-analyzer](skills/collected/storage-analyzer/SKILL.md) | [数字生命卡兹克](https://github.com/KKKKhazix/khazix-skills) | 找出磁盘占用大户，生成交互式报告及分级清理建议；附带的本地服务可提供删除功能，使用前须确认授权与目标，Windows 完整实测状态见来源说明。 |
 
-这 8 个技能于 2026-11-03 收录，保存本机当时正在使用的版本，不代表各上游最新版。每个目录的 `SOURCE.md` 记录固定上游对照提交、许可和差异，`SHA256SUMS.txt` 记录收录文件的字节校验值；`codex-with-chatgpt` 已将本机路径恢复为安装占位符，其校验对应公开版本。收录规则见[收藏说明](skills/collected/README.md)。
+这 9 个技能于 2026-11-03 收录，保存本机当时正在使用的版本，不代表各上游最新版。每个目录的 `SOURCE.md` 记录固定上游对照提交、许可和差异，`SHA256SUMS.txt` 记录收录文件的字节校验值；`codex-with-chatgpt` 已将本机路径恢复为安装占位符，其校验对应公开版本。收录规则见[收藏说明](skills/collected/README.md)。
 
 ### 仅保留来源链接
 

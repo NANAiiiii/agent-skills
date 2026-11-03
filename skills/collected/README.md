@@ -1,6 +1,6 @@
 # 收藏他人的技能
 
-这里存放收藏的第三方技能及其修改版。2026-11-03 已收录本机使用的 8 个技能快照：
+这里存放收藏的第三方技能及其修改版。2026-11-03 已收录本机使用的 9 个技能快照：
 
 | 技能 | 来源记录 | 许可 |
 | --- | --- | --- |
@@ -12,6 +12,7 @@
 | [interview-prep-generator](interview-prep-generator/SKILL.md) | [davila7 / 对照与差异](interview-prep-generator/SOURCE.md) | MIT |
 | [security-audit](security-audit/SKILL.md) | [Cloudflare / 对照与差异](security-audit/SOURCE.md) | MIT |
 | [codex-with-chatgpt](codex-with-chatgpt/SKILL.md) | [XiaoDuoYa / 对照与差异](codex-with-chatgpt/SOURCE.md) | MIT |
+| [storage-analyzer](storage-analyzer/SKILL.md) | [数字生命卡兹克 / 对照与差异](storage-analyzer/SOURCE.md) | MIT |
 
 除 `codex-with-chatgpt` 将本机安装目录恢复为 `<ACTUAL_CHECKOUT_PATH>`（校验对应公开版本，原始哈希另记在 SOURCE.md）外，技能正文和支持文件保持本机收录时的原始字节，`SHA256SUMS.txt` 列出这些文件的校验值；额外补入 `SOURCE.md` 与缺少的上游许可。上游对照提交不是原始安装版本，不将历史差异推断为本仓库作者的修改。
 
