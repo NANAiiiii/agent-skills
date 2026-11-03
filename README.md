@@ -16,6 +16,14 @@
 
 FineReport 技能附带检查脚本、预览脚本和原生参考模板。运行条件和使用方式见技能文档；预览需要可访问的 FineReport 服务及相应授权。
 
+在仓库根目录可用 Python 3（仅标准库）检查参考模板：
+
+```sh
+python skills/finereport-from-image/scripts/inspect_frm.py skills/finereport-from-image/assets/reference-dashboard.frm
+```
+
+真实预览另需 Node.js、Playwright、可用的 Chrome 和 FineReport 服务，参数见技能文档。XML 检查通过不能代替服务器预览或设计器验收。
+
 ## 收录约定
 
 - 新技能放在独立目录，根目录的技能列表同步更新。
