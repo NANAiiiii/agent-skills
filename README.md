@@ -13,19 +13,31 @@
 
 | 技能 | 作者 / 来源 | 用途 |
 | --- | --- | --- |
-| [finereport-from-image](skills/created/finereport-from-image/SKILL.md) | NANAiiiii，与 Codex 协作创建 | 根据截图创建或调整原生 FineReport `.frm` 驾驶舱，使用数据集与原生数据列，并进行预览检查。 |
+| [finereport-from-image](skills/created/finereport-from-image/SKILL.md) | NANAiiiii，与 Codex 协作创建 | 给它一张报表截图，帮你在 FineReport 中做出或调整对应的驾驶舱，生成可继续编辑的 `.frm` 文件，并检查预览效果。 |
 
 ### 收藏他人
 
 | 技能 | 原作者 / 上游对照 | 用途 |
 | --- | --- | --- |
-| [grilling](skills/collected/grilling/SKILL.md) | [Matt Pocock](https://github.com/mattpocock/skills) | 通过逐轮追问澄清需求、检查方案和决策。 |
-| [find-skills](skills/collected/find-skills/SKILL.md) | [Vercel](https://github.com/vercel-labs/skills) | 搜索和推荐可安装的技能。 |
-| [agent-reach](skills/collected/agent-reach/SKILL.md) | [Panniantong](https://github.com/Panniantong/Agent-Reach) | 多平台信息检索与工具路由，保留本机参考资料。 |
-| [neat-freak](skills/collected/neat-freak/SKILL.md) | [数字生命卡兹克](https://github.com/KKKKhazix/khazix-skills) | 核对代码、文档、规则和发布状态，进行受控收尾。 |
-| [frontend-design](skills/collected/frontend-design/SKILL.md) | [Anthropic 上游对照](https://github.com/anthropics/skills) | 网页和应用界面的视觉设计；本机副本与当前上游不同。 |
+| [grilling](skills/collected/grilling/SKILL.md) | [Matt Pocock](https://github.com/mattpocock/skills) | 当你有想法但还没想清楚时，让 AI 一步步追问，帮你明确需求、发现遗漏，再决定怎么做。 |
+| [find-skills](skills/collected/find-skills/SKILL.md) | [Vercel](https://github.com/vercel-labs/skills) | 告诉它你想做什么，帮你找有没有现成 Skill，并说明适合装哪一个。 |
+| [agent-reach](skills/collected/agent-reach/SKILL.md) | [Panniantong](https://github.com/Panniantong/Agent-Reach) | 让 AI 去网页、GitHub、B站、小红书等平台查资料，并选择对应的搜索或读取工具。 |
+| [neat-freak](skills/collected/neat-freak/SKILL.md) | [数字生命卡兹克](https://github.com/KKKKhazix/khazix-skills) | 项目做完后，帮你找出文档与代码不一致、规则过时或交接遗漏的地方，按授权整理收尾，方便下次接着做。 |
+| [frontend-design](skills/collected/frontend-design/SKILL.md) | [Anthropic 上游对照](https://github.com/anthropics/skills) | 做网页或应用界面时，帮你设计布局、配色、字体和交互外观；本机副本与当前上游不同。 |
+| [interview-prep-generator](skills/collected/interview-prep-generator/SKILL.md) | [davila7 / claude-code-templates](https://github.com/davila7/claude-code-templates) | 面试前，把你的简历和岗位要求交给它，帮你整理项目经历怎么讲、可能被问什么，以及怎样回答。 |
+| [security-audit](skills/collected/security-audit/SKILL.md) | [Cloudflare](https://github.com/cloudflare/security-audit-skill) | 想检查代码是否有安全漏洞时，帮你排查风险、验证问题，并说明影响和修复建议。 |
+| [codex-with-chatgpt](skills/collected/codex-with-chatgpt/SKILL.md) | [XiaoDuoYa](https://github.com/XiaoDuoYa/codex-with-chatgpt) | 让 ChatGPT 帮忙想方案、检查结果，Codex 负责改文件、运行命令和测试；需要另行安装配套连接工具。 |
 
-这 5 个技能于 2026-11-03 收录，保存本机当时正在使用的版本，不代表各上游最新版。每个目录的 `SOURCE.md` 记录固定上游对照提交、许可和差异，`SHA256SUMS.txt` 记录原始收录文件的字节校验值。收录规则见[收藏说明](skills/collected/README.md)。
+这 8 个技能于 2026-11-03 收录，保存本机当时正在使用的版本，不代表各上游最新版。每个目录的 `SOURCE.md` 记录固定上游对照提交、许可和差异，`SHA256SUMS.txt` 记录收录文件的字节校验值；`codex-with-chatgpt` 已将本机路径恢复为安装占位符，其校验对应公开版本。收录规则见[收藏说明](skills/collected/README.md)。
+
+### 仅保留来源链接
+
+以下两个技能的原仓库未提供许可证；按用户选择，只列用途和来源，不在本仓库复制技能文件。
+
+| 技能 | 来源 | 用途 |
+| --- | --- | --- |
+| workbuddy-executor | [dudu555-djiao / codex-workbuddy-gateway](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/workbuddy-executor) | 让 Codex 把任务交给桌面 WorkBuddy 执行，等它回报后检查成果，需要时让它继续修改；依赖配套 Gateway。 |
+| deepseek-executor | [dudu555-djiao / codex-workbuddy-gateway](https://github.com/dudu555-djiao/codex-workbuddy-gateway/tree/main/skills/deepseek-executor) | 让 Codex 把任务交给 DeepSeek Harness 中的指定会话执行，读取结果、检查成果并安排返工；依赖配套 Gateway 和 Harness 插件。 |
 
 ## 使用
 
