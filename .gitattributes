@@ -1,0 +1,2 @@
+# Preserve skill package bytes, including the native FineReport template.
+skills/** -text

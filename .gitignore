@@ -1,0 +1,29 @@
+# Python / Node caches and dependencies
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+node_modules/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+storage-state*.json
+storageState*.json
+*session-state*.json
+
+# Runtime and preview output
+*.log
+outputs/
+preview-output/
+playwright-report/
+test-results/
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
